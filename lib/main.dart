@@ -5,6 +5,8 @@ import 'package:form_route_font/form.dart';
 import 'package:form_route_font/second_screen.dart';
 import 'package:form_route_font/theme_cutomization.dart';
 
+import 'animation_drawing.dart';
+
 void main (){
   runApp(const MyApp());
 }
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        brightness: Brightness.dark,
+        // brightness: Brightness.dark,
         textTheme: TextTheme(
           headline6: TextStyle(
             fontSize: 30,
@@ -45,7 +47,8 @@ class MyApp extends StatelessWidget {
       home:
       // FirstScreen(),
       // FormScreen(),
-      ThemeCustom(),
+      // ThemeCustom(),
+      AnimationDrawing(),
 
       initialRoute: '/',
       routes: {
