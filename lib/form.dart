@@ -17,10 +17,11 @@ class _FormScreenState extends State<FormScreen> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(16),
           child: Form(
             key: formKey,
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 TextFormField(
                   autovalidateMode: AutovalidateMode.onUserInteraction,
